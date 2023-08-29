@@ -1,0 +1,153 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 40px;
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+    
+}
+header ul li a{
+    text-decoration:none;
+    color: #111;
+}
+header ul li button{
+    padding: 8px 14px;
+    border-radius: 3px;
+    background: #4584ef;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.main{
+    width: 680px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.searchbox{
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+
+}
+.search{
+    width: 98%;
+    padding: 13px;
+    padding-left: 60px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+
+}
+.icons{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none;
+    
+}
+
+.buttons{
+    margin-top: 20px;
+    
+
+}
+
+.buttons button{
+    margin-left: 30px;
+    padding: 13px 30px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    border: 1px solid transparent;
+    cursor: pointer;
+
+}
+.buttons button:hover{
+    border: 1px solid #ccc;
+}
+.lang{
+    margin-top: 10px;
+    font-size: 14px;
+}
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    
+
+    
+}
+.row ul{
+    display: flex;
+    
+}
+.row ul li{
+    list-style: none;
+
+}
+.row ul li a{
+    text-decoration: none;
+    color: gray;
+    margin-right: 25px;
+    font-size: 14px;
+}
+
+/* mobile ---------------------------  vew */
+
+@media (max-width:600px){
+    .search{
+        width: 80%;
+    }
+    .icons{
+        width: 85%;
+    }
+    .row ul{
+        display: block;
+    }
+}
+
